@@ -5,13 +5,12 @@ CREATE DATABASE burgersDB;
 
 USE burgersDB;
 
-CREATE TABLE(
-    id INT AUTO_INCREMENT,
-    burger VARCHAR (100),
+CREATE TABLE burgers (
+    id INT NOT NULL AUTO_INCREMENT,
+    burger VARCHAR (100) NOT NULL,
     devoured BOOLEAN, 
     PRIMARY KEY (id)
 );
-INSERT INTO burgers(id, burger, devoured)
-VALUES (1, "Kansas City Burger", false), (2, "Bangkok Burger", false), (3, "Urban Burger", false);
+
 
 
